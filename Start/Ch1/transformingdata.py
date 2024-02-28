@@ -44,6 +44,5 @@ pprint.pp(metric[0])
 
 # TODO: use the map() function to convert objects to tuples
 # in this case, create tuples with a date and the average of tmin and tmax
-Avg_Temp = lambda t1, t2: (t1 + t2) / 2.0
-tuple_data = list(map(lambda d:(d['date'],Avg_Temp(d['tmax'],d['tmin'])), weatherdata))
+ptuple_data = list(map(lambda d:(d['date'],Avg_Temp(d['tmax'],d['tmin'])), weatherdata))
 pprint.pp(tuple_data)
